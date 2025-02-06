@@ -1,50 +1,123 @@
-# React + TypeScript + Vite
+# Weather Station - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Application web pour visualiser et analyser les données météorologiques collectées par un capteur BME680 installé sur un ESP32.
 
-Currently, two official plugins are available:
+## Prérequis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Node.js (version 18+)
+* npm (version 9+)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Clonage du projet
+```
+bash
+git clone https://github.com/votre-username/weather-station.git
+cd weather-station
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Installation des dépendances
 ```
+bash
+npm install
+```
+
+## Dépendances Principales
+
+## Développement
+
+* React 18
+* TypeScript
+* Vite
+
+## Gestion d'État
+
+* Redux Toolkit (@reduxjs/toolkit)
+* React Redux (react-redux)
+
+## Routing
+
+* React Router Dom (react-router-dom)
+
+## Requêtes API
+
+* Axios (axios)
+
+## Visualisation de Données
+
+* Recharts (recharts)
+
+## Styles
+
+* Tailwind CSS (tailwindcss)
+* PostCSS (postcss)
+* Autoprefixer (autoprefixer)
+
+## Utilitaires
+
+* Date-fns (date-fns)
+* Lucide React (lucide-react)
+* React Hot Toast (react-hot-toast)
+
+## Scripts Disponibles
+
+* npm run dev : Démarre le serveur de développement
+* npm run build : Construit l'application pour la production
+* npm run preview : Prévisualise l'application construite
+* npm run test : Lance les tests
+
+## Structure du Projet
+
+```
+Copyweather-station/
+│
+├── public/                 # Ressources statiques
+├── src/
+│   ├── components/         # Composants React réutilisables
+│   │   ├── common/         # Composants génériques
+│   │   ├── layout/         # Composants de mise en page
+│   │   └── charts/         # Composants de graphiques
+│   │
+│   ├── pages/              # Composants de pages
+│   ├── services/           # Services API et logique métier
+│   ├── store/              # Configuration Redux
+│   │   ├── slices/         # Slices Redux
+│   │   └── hooks.ts        # Hooks Redux personnalisés
+│   │
+│   ├── types/              # Définitions de types TypeScript
+│   ├── utils/              # Utilitaires et helpers
+│   ├── App.tsx             # Composant racine de l'application
+│   └── main.tsx            # Point d'entrée
+│
+├── tailwind.config.js      # Configuration Tailwind
+└── vite.config.ts          # Configuration Vite
+```
+
+## Configuration Environnement
+
+Créez un fichier .env à la racine du projet avec les variables suivantes :
+
+```
+VITE_API_BASE_URL=http://[IP_ESP32]:17777
+```
+## Déploiement
+
+### Build de Production
+
+```
+bash
+npm run build
+```
+
+## Prévisualisation
+
+```
+bash
+npm run preview
+```
+
+## Contact
+* Anthony Di Persio - dipersio.a@gmail.com
+* Projet Link: https://github.com/petitvulcan/weather-station
