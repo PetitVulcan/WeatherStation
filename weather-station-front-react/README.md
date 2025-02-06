@@ -12,7 +12,6 @@ Application web pour visualiser et analyser les données météorologiques colle
 
 ## Clonage du projet
 ```
-bash
 git clone https://github.com/votre-username/weather-station.git
 cd weather-station
 ```
@@ -20,7 +19,6 @@ cd weather-station
 
 ## Installation des dépendances
 ```
-bash
 npm install
 ```
 
@@ -71,7 +69,7 @@ npm install
 ## Structure du Projet
 
 ```
-Copyweather-station/
+weather-station/
 │
 ├── public/                 # Ressources statiques
 ├── src/
@@ -107,14 +105,12 @@ VITE_API_BASE_URL=http://[IP_ESP32]:17777
 ### Build de Production
 
 ```
-bash
 npm run build
 ```
 
 ## Prévisualisation
 
 ```
-bash
 npm run preview
 ```
 
