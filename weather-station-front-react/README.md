@@ -12,7 +12,7 @@ Application web pour visualiser et analyser les données météorologiques colle
 
 ## Clonage du projet
 ```
-git clone https://github.com/votre-username/weather-station.git
+git clone https://github.com/petitpelerin/weather-station.git
 cd weather-station
 ```
 
@@ -115,5 +115,5 @@ npm run preview
 ```
 
 ## Contact
-* Anthony Di Persio - dipersio.a@gmail.com
-* Projet Link: https://github.com/petitvulcan/weather-station
+Anthony Di Persio - dipersio.a@gmail.com
+Projet Link: https://github.com/petitvulcan/weather-station
