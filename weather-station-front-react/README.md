@@ -24,36 +24,36 @@ npm install
 
 ## Dépendances Principales
 
-## Développement
+### Développement
 
 * React 18
 * TypeScript
 * Vite
 
-## Gestion d'État
+### Gestion d'État
 
 * Redux Toolkit (@reduxjs/toolkit)
 * React Redux (react-redux)
 
-## Routing
+### Routing
 
 * React Router Dom (react-router-dom)
 
-## Requêtes API
+### Requêtes API
 
 * Axios (axios)
 
-## Visualisation de Données
+### Visualisation de Données
 
 * Recharts (recharts)
 
-## Styles
+### Styles
 
 * Tailwind CSS (tailwindcss)
 * PostCSS (postcss)
 * Autoprefixer (autoprefixer)
 
-## Utilitaires
+### Utilitaires
 
 * Date-fns (date-fns)
 * Lucide React (lucide-react)
