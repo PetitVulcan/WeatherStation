@@ -115,5 +115,5 @@ npm run preview
 ```
 
 ## Contact
-Anthony Di Persio - dipersio.a@gmail.com
-Projet Link: https://github.com/petitvulcan/weather-station
+* Anthony Di Persio - dipersio.a@gmail.com
+* Projet Link: https://github.com/petitvulcan/weather-station
